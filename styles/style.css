@@ -253,7 +253,6 @@ img {
 }
 
 .card__title {
-  /* text-decoration: none; */
   z-index: 4;
   color: white;
   font-size: 22px;
