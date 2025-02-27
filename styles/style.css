@@ -7,9 +7,8 @@
   display: grid;
   grid-template-columns: 5fr 2fr 1.9fr 3.1fr;
   font-size: 18px;
-  padding: 92.5px 26px;
+  padding: 92.5px 26px 95px;
   margin: 0;
-  margin-bottom: 2px;
 }
 
 .header__links-list {
@@ -87,11 +86,12 @@ img {
   letter-spacing: 0.2px;
 }
 
-cover {
+.cover__block {
   position: relative;
 }
 
 .cover {
+  position: relative;
   height: 758px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
