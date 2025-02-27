@@ -96,7 +96,8 @@ img {
   background-image: url(../images/cover.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
+  background-position: -137.4px 2px;
 }
 
 .overlay {
