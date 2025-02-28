@@ -1,3 +1,28 @@
+h1 {
+  font-size: 100px;
+  font-weight: 600;
+  color: white;
+  line-height: 110px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-transform: uppercase;
+  text-underline-offset: 3px;
+}
+
 .header {
   align-items: center;
   background-color: white;
@@ -69,7 +94,6 @@ img {
   grid-column: 4 / 5;
   display: flex;
   padding-top: 3px;
-
 }
 
 .address {
@@ -97,7 +121,6 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-position: -137.4px 2px; */
 }
 
 .overlay {
@@ -115,11 +138,6 @@ img {
   display: flex;
   flex-direction: column;
   z-index: 2;
-  font-size: 100px;
-  color: white;
-  font-weight: 600;
-  line-height: 110px;
-  text-transform: uppercase;
   gap: 10px;
 }
 
@@ -247,15 +265,7 @@ img {
 }
 
 .card__title {
-  z-index: 4;
-  color: white;
-  font-size: 22px;
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 26px;
-  text-underline-offset: 3px;
+  z-index: 1;
 }
 
 .card__text {
@@ -268,6 +278,7 @@ img {
 }
 
 .lots__look-more-link {
+  display: flex;
   padding-top: 30px;
   padding-left: 40px;
   font-size: 20px;
@@ -283,7 +294,6 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: max-content;
   column-gap: 25px;
-
 }
 
 .about__logo {
@@ -313,21 +323,23 @@ img {
   padding-top: 6px;
   grid-row: 1; /* Первый ряд */
   grid-column: 2 / span 2;
-  height: 240px;
   align-items: center;
-  font-size: 40px;
-  text-transform: uppercase;
-  font-weight: 600;
 }
 
 .about__text {
+  display: flex;
+  flex-direction: column;
   padding-top: 6px;
   padding-right: 4px;
+  grid-row: 2; /* Второй ряд */
+  grid-column: 2 / span 2; /* Объединение второй и третьей колонок */
+  gap: 24px;
+}
+
+.about__text p {
   font-size: 20px;
   font-weight: 400;
   text-transform: none;
-  grid-row: 2; /* Второй ряд */
-  grid-column: 2 / span 2; /* Объединение второй и третьей колонок */
   text-align: start; /* Выравнивание текста по ширине */
   letter-spacing: 0.13px;
   line-height: 24px;
